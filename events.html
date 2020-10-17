@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Events UKM Renang</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .cardon{
+        /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        width: 300px;
+        margin-left: 260px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        background-color: white; */
+        width: 280px;
+        display: inline-block;
+        margin: 50px 25px;
+        margin-left: 50px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+      }
+
+      img{
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .cardpass{
+        width: 280px;
+        display: inline-block;
+        margin: 50px 25px;
+        margin-left: 44px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+      }
+
+      .cardachive{
+        width: 280px;
+        display: inline-block;
+        margin: 50px 25px;
+        margin-left: 50px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+      }
+
+      .cardbig{
+        width: 80%;
+        margin-left: 10%;
+        padding: 20px;
+        background-color: snow;
+        box-shadow: 4px 4px 4px lightgray;
+        margin-top: 10px;
+      }
+
+      .layout{
+        margin-bottom: 20px;
+      }
+
+      button {
+        display: inline-block;
+        border-radius: 8px;
+        background-color:#3385FF;
+        border:none;
+        color:#FFF;
+        text-align:center;
+        font-size: 10px;
+        padding: 10px;
+        width:100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 15px;
+      }
+
+      button:hover{
+        opacity: 0.7;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="table">
+      <table>
+        <tr bgcolor=#F2DDA4>
+          <td>
+            <marquee class="p1" direction="right" scrollamount="15">
+              <img src="img/full/logo.png" alt="Logo ukm" style="width: 100px;">
+              <p>Selamat Datang</p>
+              <p>UKM Renang</p>
+              <p>Universitas Ma Chung</p>
+            </marquee>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <ul>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="registration.html">Registration</a>
+        <a href="aboutus.html">About Us</a>
+      </div>
+    </ul>
+
+    <div class="cardbig">
+      <h2 style="text-align: center; font-size: 35px;"> &nbsp;&nbsp; On Going Events </h2>
+      <div class="cardon">
+        <img src="img/full/kolam10.png" alt="Kolam 10 Meter" style="width:100%">
+        <p class="title" style="text-align: center"><b>Lomba Renang 10M <br> Tingkat Nasional</b></p>
+        <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+          Deskripsi acara: <br>
+          Lomba ini diselenggarakan pada tahun 2020 dan lomba tingkat Nasional Lomba ini diikuti <span id="titik1">...</span>
+          <span id="moreevent1">dengan jumlah peserta sebanyak 100 peserta <br>
+          jika ingin mengikuti lomba ini diharapkan untuk <br>
+          medaftar UKM Renang Universitas Ma Chung.</span></p>
+        <p align=right><button onclick="Function1()" id="more1">See More</button></p>
+      </div>
+
+      <div class="cardon">
+        <img src="img/full/kolam5.png" alt="Kolam 5 Meter" style="width:100%">
+        <p class="title" style="text-align: center"><b>Lomba Renang 5M <br> Tingkat Nasional</b></p>
+        <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+          Deskripsi acara: <br>
+          Lomba ini diselenggarakan pada tahun 2020 dan lomba tingkat Nasional Lomba ini diikuti <span id="titik2">...</span>
+          <span id="moreevent2">dengan jumlah peserta sebanyak 100 peserta <br>
+          jika ingin mengikuti lomba ini diharapkan untuk <br>
+          medaftar UKM Renang Universitas Ma Chung.</span></p>
+        <p align=right><button onclick="Function2()" id="more2">See More</button></p>
+      </div>
+
+      <div class="cardon">
+        <img src="img/full/lompat.png" alt="Loncat Indah" style="width:100%">
+        <p class="title" style="text-align: center"><b>Lomba Lompat Indah <br> Tingkat Nasional</b></p>
+        <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+          Deskripsi acara: <br>
+          Lomba ini diselenggarakan pada tahun 2020 dan lomba tingkat Nasional Lomba ini diikuti <span id="titik3">...</span>
+          <span id="moreevent3">dengan jumlah peserta sebanyak 100 peserta <br>
+          jika ingin mengikuti lomba ini diharapkan untuk <br>
+          medaftar UKM Renang Universitas Ma Chung.</span></p>
+        <p align=right><button onclick="Function3()" id="more3">See More</button></p>
+      </div>
+    </div>
+
+
+    <div class="cardbig">
+      <h2 style="text-align: center;"> &nbsp;&nbsp; Passed Events </h2>
+
+      <div class="cardpass">
+        <img src="img/full/kolam5i.png" alt="Kolam 5 Meter" style="width:100%">
+        <p class="title" style="text-align: center"><b>Lomba Renang 5M <br> Tingkat Provinsi</b></p>
+        <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+          Deskripsi acara: <br>
+          Lomba ini diselenggarakan pada tahun 2016 dan lomba tingkat Nasional Lomba ini diikuti <span id="titik4">...</span>
+          <span id="moreevent4">dengan jumlah peserta sebanyak 100 peserta <br>
+          dan Univertas Ma Chung mendapatkan posisi 2.jika kalian ingin  <br>
+          bisa maka dapat mendaftar UKM ini.</span></p>
+        <p align=right><button onclick="Function4()" id="more4">See More</button></p>
+      </div>
+
+      <div class="cardpass">
+        <img src="img/full/kolam10i.png" alt="kolam 10 Meter" style="width:100%">
+        <p class="title" style="text-align: center"><b>Lomba Renang 10M <br> Tingkat Nasional</b></p>
+        <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+          Deskripsi acara: <br>
+          Lomba ini diselenggarakan pada tahun 2016 dan lomba tingkat Nasional Lomba ini diikuti <span id="titik5">...</span>
+          <span id="moreevent5">dengan jumlah peserta sebanyak 100 peserta <br>
+            dan Univertas Ma Chung mendapatkan posisi 1.jika kalian ingin  <br>
+            bisa maka dapat mendaftar UKM ini.</span></p>
+        <p align=right><button onclick="Function5()" id="more5">See More</button></p>
+      </div>
+
+      <div class="cardpass">
+        <img src="img/full/kolam2.png" alt="kolam 2 Meter" style="width:100%">
+        <p class="title" style="text-align: center"><b>Lomba Renang 2M <br> Tingkat Kabupaten</b></p>
+        <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+          Deskripsi acara: <br>
+          Lomba ini diselenggarakan pada tahun 2016 dan lomba tingkat Nasional Lomba ini diikuti <span id="titik6">...</span>
+          <span id="moreevent6">dengan jumlah peserta sebanyak 100 peserta <br>
+            dan Univertas Ma Chung mendapatkan posisi 1.jika kalian ingin  <br>
+            bisa maka dapat mendaftar UKM ini.</span></p>
+        <p align=right><button onclick="Function6()" id="more6">See More</button></p>
+      </div>
+
+      <div class="cardpass">
+        <img src="img/full/kolam5i.png" alt="John" style="width:100%">
+        <p class="title" style="text-align: center"><b>Lomba Renang 5M <br> Tingkat Nasional</b></p>
+        <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+          Deskripsi acara: <br>
+          Lomba ini diselenggarakan pada tahun 2016 dan lomba tingkat Nasional Lomba ini diikuti <span id="titik7">...</span>
+          <span id="moreevent7">dengan jumlah peserta sebanyak 100 peserta <br>
+            dan Univertas Ma Chung mendapatkan posisi 3.jika kalian ingin  <br>
+            bisa maka dapat mendaftar UKM ini.</span></p>
+        <p align=right><button onclick="Function7()" id="more7">See More</button></p>
+      </div>
+    </div>
+
+    <div class="layout">
+      <div class="cardbig">
+        <h2 style="text-align: center; font-size: 35px;"> &nbsp;&nbsp; Event Achivements </h2>
+
+          <div class="cardachive">
+            <img src="img/full/piala2.png" alt="John" style="width:100%">
+            <p class="title" style="text-align: center"><b> Juara 2 <br> Renang 5M  </b></p>
+            <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+              Deskripsi acara: <br>
+              Keejuaraan ini bernama nasionality Ma Chung Cup yang diselenggarakan di Ma Chung <span id="titik8">...</span>
+              <span id="moreevent8">dengan jumlah peserta sebanyak 35 peserta <br>
+              dan Univertas Ma Chung mendapatkan posisi 2.jika kalian ingin  <br>
+              bisa maka dapat mendaftar UKM ini.</span></p>
+            <p align=right><button onclick="Function8()" id="more8">See More</button></p>
+          </div>
+
+          <div class="cardachive">
+            <img src="img/full/piala1.png" alt="John" style="width:100%">
+            <p class="title" style="text-align: center"><b> Juara 1 <br> Renang 10M </b></p>
+            <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+              Deskripsi acara: <br>
+              Keejuaraan ini bernama nasionality Indonesia Cup yang diselenggarakan di olimpic stadion <span id="titik9">...</span>
+              <span id="moreevent9">dengan jumlah peserta sebanyak 75 peserta <br>
+              dan Univertas Ma Chung mendapatkan posisi 1.jika kalian ingin  <br>
+              bisa maka dapat mendaftar UKM ini.</span></p>
+            <p align=right><button onclick="Function9()" id="more9">See More</button></p>
+          </div>
+
+          <div class="cardachive">
+            <img src="img/full/piala3.png" alt="John" style="width:100%">
+            <p class="title" style="text-align: center"><b> Juara 3 <br> Lompat Indah </b></p>
+            <p class="content" align="justify" style="padding-left: 10px; padding-right: 10px;">
+              Deskripsi acara: <br>
+              Keejuaraan ini bernama nasionality swimming race Cup yang diselenggarakan di olimpic stadion <span id="titik10">...</span>
+              <span id="moreevent10">dengan jumlah peserta sebanyak 100 peserta <br>
+              dan Univertas Ma Chung mendapatkan posisi 3.jika kalian ingin  <br>
+              bisa maka dapat mendaftar UKM ini.</span></p>
+            <p align=right><button onclick="Function10()" id="more10">See More</button></p>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer">
+      <p>&copy Copyright 2020 by samuel</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .table3 th,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        border-left: 0px;
+        border-bottom: 0px;
+        text-align:center;
+        width: 100%;
+        padding: 20px;
+        border-width: medium;
+      }
+
+      .name textarea[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #4CAF40;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .message textarea[type=text], select {
+        width: 100%;
+        height: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #4CAF40;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .detailme{
+        text-align: justify;
+      }
+
+      /* Button send JS */
+      button{
+        background-color: #43999D;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        }
+
+      button:hover{
+        background-color: #61E786;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+    </style>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="table">
+      <table>
+        <tr bgcolor=#F2DDA4>
+          <td>
+            <marquee class="p1" direction="right" scrollamount="15">
+              <img src="img/full/logo.png" alt="Logo ukm" style="width: 100px;">
+              <p>Selamat Datang</p>
+              <p>UKM Renang</p>
+              <p>Universitas Ma Chung</p>
+            </marquee>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <ul>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="registration.html">Registration</a>
+        <a href="aboutus.html">About Us</a>
+      </div>
+    </ul>
+
+    <h2 style="text-align: center; font-size: 50px;"> Location </h2>
+
+    <p align=center>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.8079372700936!2d112.58967306844876!3d-7.958256223435151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78825bc65e176b%3A0x954b33ee83283be2!2sUniversitas%20Ma%20Chung!5e0!3m2!1sid!2sid!4v1602849496196!5m2!1sid!2sid"
+       width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </p>
+
+    <table class="table3" style="width:100%">
+      <tr style="height:250px">
+        <th valign=center style="width:50%; font-size: 30px; text-align:left; background-color: #FFC914;">
+          <!-- Hubungi Kami : <br>
+          Email : UKMRenang@machung.ac.id <br>
+          NO WA : 081241117894 (Adelia) -->
+          <div >
+            <h2> Hubungi Kami : </h2>
+            <div class="detailme">
+              <a href="#"><span class="fab fa-facebook-f"></span>&nbsp;&nbsp;:  Club Renang Ma Chung</a><br>
+              <a href="#"><span class="fab fa-twitter">&nbsp; : &nbsp;Club UKM Renang Ma Chung</span></a><br>
+              <a href="#"><span class="fab fa-instagram">&nbsp; : &nbsp; UKM Renang Univ Ma Chung</span></a><br>
+              <a href="#"><span class="fas fa-envelope">&nbsp; : &nbsp; UKMRenang@mail.ac.id</span></a><br>
+              <a href="#"><span class="fab fa-youtube">&nbsp; : &nbsp;&nbsp;Ma Chung Renang Club</span></a><br>
+              <a href="#"><span class="fas fa-map-marker-alt">&nbsp;&nbsp; : &nbsp;&nbsp; Universitas Ma Chung</span></a>
+            </div>
+          </div>
+        </th>
+        <th valign=left style="width:50%; border-right: 0px; background-color: #FFC914;">
+          <div>
+            <form>
+              <div class="name" style="text-align: left; font-size: 25px;">
+                <label for="fname">Full Name</label>
+                <textarea type="text" id="fname" placeholder="Full Name"></textarea>
+              </div>
+
+              <div class="message" style="text-align: left; font-size: 25px; margin-top: 10px;">
+                <label for="lname">Message</label>
+                <textarea type="text" id="pesan" placeholder="Write Your Message"></textarea>
+              </div>
+              <button class="buttonsend" onclick="sendButton()"> sent </button>
+            </form>
+          </div>
+        </th>
+      </tr>
+    </table>
+
+  <div class="footer">
+      <p>&copy Copyright 2020 by samuel</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body {
+  font-family:'Shadows Into Light' ;
+  padding: 0px;
+  margin: 0px;
+  background: #EFF0D1;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+marquee {
+  width: 100%;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/* untuk sticky nav */
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+/* Buat bagian nav */
+.topnav {
+  overflow: hidden;
+  background-color: #1C77C3;
+  padding: 0px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #6C5b7B;
+  color: black;
+  padding: 15px;
+}
+
+.footer {
+  width: 100%;
+  padding: 5px;
+  background: #F2DDA4;
+  color: black;
+  text-align: center;
+}
+
+/* ngatur header */
+.p1 p {
+  margin: 0px;
+  padding: 4px;
+  color: #776871;
+}
+
+.table table {
+  width: 100%;
+  height: 100px;
+}
+
+/* mengatur readmore di EVENT JS*/
+#moreevent1,#moreevent2,#moreevent3,#moreevent4,#moreevent5,
+#moreevent6,#moreevent7,#moreevent8,#moreevent9,#moreevent10{
+  display: none;
+}
+
+/* Button send JS */
+.buttonsend {
+  background-color: #43999D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.buttonsend:hover {
+  background-color: #61E786;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

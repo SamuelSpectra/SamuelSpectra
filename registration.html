@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration UKM Renang</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #4CAF40;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .form{
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-right: 25px;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="table">
+      <table>
+        <tr bgcolor=#F2DDA4>
+          <td>
+            <marquee class="p1" direction="right" scrollamount="15">
+              <img src="img/full/logo.png" alt="Logo ukm" style="width: 100px;">
+              <p>Selamat Datang</p>
+              <p>UKM Renang</p>
+              <p>Universitas Ma Chung</p>
+            </marquee>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <ul>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="registration.html">Registration</a>
+        <a href="aboutus.html">About Us</a>
+      </div>
+    </ul>
+
+    <h1 style="text-align: center;"> <b>Form Registrasi</b> </h1>
+    <div>
+      <form class="form">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fullname" placeholder="Nama Lengkap">
+
+        <label for="panggilan">Nama Panggilan</label>
+        <input type="text" id="cname" name="callname" placeholder="Nama Panggilan">
+
+        <label for="nim">NIM</label>
+        <input type="text" id="nimnumber" name="angkanim" placeholder="NIM">
+
+        <label for="prodi">Program Studi</label>
+        <input type="text" id="prodi" name="programstudi" placeholder="Prodi">
+
+        <label for="tempatlahir">Tempat Lahir</label>
+        <input type="text" id="tlahir" name="tempatlahir" placeholder="Tempat Lahir">
+
+        <label for="tanggallahir">Tanggal Lahir</label>
+        <input type="text" id="tgllhr" name="tanggallahir" placeholder="DD-MM-YY">
+
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="e-mail" placeholder="contoh@gmail.com">
+
+        <label for="Nohp">Nomor WA</label>
+        <input type="text" id="nohp" name="Nohp" placeholder="0812XXXXXXXX">
+
+        <input type="checkbox" name="checklist">
+        <label for="checklist">Saya setuju dengan semua persyaratan <span> dan peraturan </span> yang ada.</label> <br>
+        <button class="buttonsend" onclick="sendButton1()"> Send </button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>&copy Copyright 2020 by samuel</p>
+    </div>
+  </body>
+</html>
